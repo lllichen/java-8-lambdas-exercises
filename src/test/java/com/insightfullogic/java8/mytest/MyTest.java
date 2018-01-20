@@ -1,5 +1,6 @@
 package com.insightfullogic.java8.mytest;
 
+import com.insightfullogic.java8.examples.chapter1.Artist;
 import com.insightfullogic.java8.examples.chapter1.Track;
 import org.junit.Test;
 
@@ -10,6 +11,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.lang.Character.isDigit;
+import static java.lang.Character.reverseBytes;
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
 import static org.junit.Assert.assertEquals;
@@ -65,5 +67,20 @@ public class MyTest {
         int count = Stream.of(1, 2, 3)
                 .reduce(0, (acc, element) -> acc + element);
         assertEquals(6, count);
+
+        asList(1, 2).stream().toString();
+    }
+
+    @Test
+    public void testAdd(){
+        int value = Stream.of( 12,3 ).reduce( 0,(acc,element)->acc+element );
+
+    }
+
+    @Test
+    public void testCount(){
+        List<Artist> artists = asList(  );
+        artists.stream().flatMap( artist->artist.getMembers() ).count();
+
     }
 }
