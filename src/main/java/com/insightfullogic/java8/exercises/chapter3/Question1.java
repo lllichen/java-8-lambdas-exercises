@@ -22,7 +22,7 @@ public class Question1 {
     }
 
     public static List<Album> getAlbumsWithAtMostThreeTracks(List<Album> input) {
-        return Exercises.replaceThisWithSolution();
+        return input.stream().filter(album -> album.getTrackList().size()<=3 ).collect( toList() );
     }
 
 }

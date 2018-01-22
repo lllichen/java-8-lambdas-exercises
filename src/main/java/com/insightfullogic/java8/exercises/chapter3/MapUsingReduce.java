@@ -5,6 +5,7 @@ import com.insightfullogic.java8.exercises.Exercises;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 /**
@@ -14,6 +15,15 @@ public class MapUsingReduce {
 
     public static <I, O> List<O> map(Stream<I> stream, Function<I, O> mapper) {
         return Exercises.replaceThisWithSolution();
+    }
+
+    public static void main(String[] args) {
+        new Supplier<String>() {
+            @Override
+            public String get() {
+                return null;
+            }
+        };
     }
 
 }

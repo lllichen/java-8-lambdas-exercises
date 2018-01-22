@@ -5,9 +5,11 @@ import com.insightfullogic.java8.exercises.Exercises;
 
 import java.util.List;
 
+import static java.lang.StrictMath.toIntExact;
+
 public class Question2 {
     // Q3
     public static int countBandMembersInternal(List<Artist> artists) {
-        return Exercises.replaceThisWithSolution();
+        return artists.stream().map( artist -> artist.getMembers().count()).reduce( 0L,Long::sum ).intValue();
     }
 }
