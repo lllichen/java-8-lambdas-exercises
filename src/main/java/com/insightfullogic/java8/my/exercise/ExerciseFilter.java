@@ -26,12 +26,12 @@ public class ExerciseFilter {
 
 
 
-        List<Integer> newList = new ArrayList<>( );
-        for (Integer integer : list){
-            if(integer > 10){
-                newList.add( integer );
-            }
-        }
+//        List<Integer> newList = new ArrayList<>( );
+//        for (Integer integer : list){
+//            if(integer > 10){
+//                newList.add( integer );
+//            }
+//        }
 
     }
 }
