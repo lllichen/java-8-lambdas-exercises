@@ -8,6 +8,7 @@ public class ExerciseThread {
 
     public static void main(String[] args) {
         Thread t = new Thread( ()-> System.out.println("Hello World") );
+        Runnable runnable = ()->System.out.println("Hello World") ;
         t.start();
     }
 }
